@@ -1,0 +1,32 @@
+.car {
+    background-image: url("../images/eviltesladark.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.title-car {
+    font-family: 'Bebas Neue', cursive;
+    font-size: var(--header-font-size);
+    -webkit-text-stroke-width: 0.2rem;
+    -webkit-text-stroke-color: var(--bs-light);
+    text-shadow: 2px 2px 2px var(--shadow-color);
+}
+
+.subtitle-car {
+    font-family: 'Bebas Neue', cursive;
+    font-size: calc(var(--title-font-size) + 1rem);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--bs-secondary);
+    text-shadow: 1px 1px 1px var(--shadow-color);
+}
+
+.citation {
+    color: var(--bs-secondary);
+    font-size: 2rem;
+}
+
+.moral {
+    color: var(--bs-secondary);
+    font-size: 3rem;
+}
