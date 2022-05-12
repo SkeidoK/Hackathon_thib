@@ -30,3 +30,12 @@
     color: var(--bs-secondary);
     font-size: 3rem;
 }
+.btn-color {
+    background-color: var(--bs-secondary);
+}
+.border-card {
+    border: solid 2px var(--bs-secondary) ;
+}
+.bg-card {
+    background-color: var(--bs-primary);
+}
