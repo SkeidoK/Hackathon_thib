@@ -9,6 +9,7 @@
 {% block map %}
 	{% include 'Components/_map.html.twig' %}
 {% endblock %}
+{% block random %}
 
 	<div class="container-fluid">
 		<header>
@@ -22,7 +23,7 @@
 			</div>
 		</header>
 	</div>
-
+{% endblock %}
 
 {% block moral %}
 	{% include 'Citation/_citation.html.twig' %}
@@ -31,4 +32,6 @@
 
 {% endblock %}
 
-{% block tips %}{% include "Tips/index.html.twig" %}{% endblock %}
+{% block tips %}
+	{% include "Tips/index.html.twig" %}
+{% endblock %}
