@@ -16,15 +16,24 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
---
--- Base de données :  `simple-mvc`
---
+CREATE TABLE IF NOT EXISTS `citation` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `citation` TEXT NOT NULL,
+  `author` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
+INSERT INTO `citation` (`citation`, `author`) VALUES
+("L'homme se doit d'être le gardien de la nature, non son propriétaire.", 'Philippe St Marc'),
+("Vous êtes prisonnier d'un système de civilisation qui vous pousse plus ou moins à détruire le monde pour survivre.", 'Daniel Quinn'),
+("Si l'on m'apprenait que la fin du monde est pour demain, je planterais quand même un pommier.", 'Martin Luther King'),
+("C'est une triste chose de songer que la nature parle et que le genre humain ne l'écoute pas.", 'Victor Hugo'),
+("Ils ne savaient pas que c'était impossible, alors ils l'ont fait.", 'Mark Twain'),
+("Celui qui déplace une montagne commence par déplacer de petites pierres.", 'Confucius'),
+("Le peu qu'on peut faire, le très peu qu'on peut faire, il faut le faire.", 'Théodore Monod'),
+("Ne doutez jamais qu'un petit groupe de citoyens engagés et réfléchis puisse changer le monde. En réalité c'est toujours ce qui s'est passé.", 'Margret Mead'),
+("Nous n'héritons pas de la terre de nos parents, nous l'empruntons à nos enfants.", 'Antoine de Saint-Exupéry');
 
---
--- Structure de la table `item`
---
 
 CREATE TABLE `item` (
   `id` int(11) UNSIGNED NOT NULL,
