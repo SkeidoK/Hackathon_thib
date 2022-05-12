@@ -17,11 +17,16 @@
 	</div>
 {% endblock %}
 
-{% block moral %}
+{% block citation %}
 	{% include 'Citation/_citation.html.twig' %}
-	{% include 'CreationVehicule/_creation.html.twig' %}
-	{% include 'Moral/_moral.html.twig' %}
+{% endblock %}
 
+{% block creation %}
+{% include 'CreationVehicule/_creation.html.twig' %}
+{% endblock %}
+
+{% block moral %}
+	{% include 'Moral/_moral.html.twig' %}
 {% endblock %}
 
 {% block tips %}{% include "Tips/index.html.twig" %}{% endblock %}
