@@ -1,7 +1,7 @@
 {% block map %}
-	<div class="d-flex">
-		<div class="ms-4 d-flex flex-column justify-content-center align-items-center mx-auto ">
-			<form action="http://localhost:8000/search" method="GET">
+	<div class="container d-flex">
+		<div class="ms-4 d-flex flex-column justify-content-start align-items-start mx-auto ">
+			<form action="http://localhost:8000/search" method="GET" class="m-4">
 				<label for="ville">Rechercher une ville</label><br>
 				<input type="search" id="ville" name="ville" class="form-control rounded" placeholder="Ville" aria-label="Search" aria-describedby="search-addon"/><br>
 			</form>
@@ -21,6 +21,6 @@
 				{% endif %}
 			</div>
 		</div>
-			<iframe class="me-4" src="https://map.openchargemap.io/?mode=embedded&latitude={{ y|default(" 47") }}&longitude={{ x|default(" 1.9") }}" allow="geolocation" frameborder="0" width="100%" height="500px"></iframe>
+			<iframe class="me-4 mt-4 mb-4" src="https://map.openchargemap.io/?mode=embedded&latitude={{ y|default(" 47") }}&longitude={{ x|default(" 1.9") }}" allow="geolocation" frameborder="0" width="100%" height="500px"></iframe>
 	</div>
 {% endblock %}
