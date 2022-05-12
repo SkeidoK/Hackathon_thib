@@ -22,20 +22,24 @@
 }
 
 .citation {
+    font-family: var(--text-font2);
     color: var(--bs-secondary);
     font-size: 2rem;
+    text-shadow: 1px 1px 1px var(--bs-secondary);
 }
 
 .moral {
+    font-family: var(--text-font2);
     color: var(--bs-secondary);
     font-size: 3rem;
+    text-shadow: 1px 1px 1px var(--bs-secondary);
 }
-.btn-color {
-    background-color: var(--bs-secondary);
+
+.accordion{
+    color: var(--bs-secondary);
+    background-color: black;
 }
-.border-card {
-    border: solid 2px var(--bs-secondary) ;
-}
-.bg-card {
-    background-color: var(--bs-primary);
+
+.accordion-button{
+    color: var(--bs-secondary);
 }

@@ -3,6 +3,13 @@
 	<link rel="stylesheet" href="/assets/css/home.css">
 {% endblock %}
 {% block content %}
+	<h1>Evil tesla !</h1>
+{% endblock %}
+
+{% block map %}
+	{% include 'Components/_map.html.twig' %}
+{% endblock %}
+
 	<div class="container-fluid">
 		<header>
 			<div class="car d-flex align-items-center flex-column justify-content-center">
@@ -15,10 +22,11 @@
 			</div>
 		</header>
 	</div>
-{% endblock %}
+
 
 {% block moral %}
 	{% include 'Citation/_citation.html.twig' %}
+	{% include 'CreationVehicule/_creation.html.twig' %}
 	{% include 'Moral/_moral.html.twig' %}
 
 {% endblock %}
