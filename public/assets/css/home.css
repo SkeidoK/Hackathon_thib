@@ -47,3 +47,18 @@
 .map-text{
     color: var(--bs-secondary);
 }
+.bg-card {
+    background-color: var(--bs-primary);
+}
+.border-card {
+    border: solid 1px var(--bs-secondary) ;
+}
+.border-card-bottom {
+    border-bottom: solid 1px var(--bs-secondary) ;
+}
+.btn-color {
+    background-color: var(--bs-secondary);
+}
+.color-text {
+    color: var(--bs-light);
+}
