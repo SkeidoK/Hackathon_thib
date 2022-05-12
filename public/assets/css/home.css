@@ -22,11 +22,15 @@
 }
 
 .citation {
+    font-family: var(--text-font);
     color: var(--bs-secondary);
     font-size: 2rem;
+    text-shadow: 1px 1px 1px var(--bs-secondary);
 }
 
 .moral {
+    font-family: var(--text-font);
     color: var(--bs-secondary);
     font-size: 3rem;
+    text-shadow: 1px 1px 1px var(--bs-secondary);
 }
