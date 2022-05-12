@@ -3,6 +3,8 @@
 namespace App\Controller;
 
 use App\Model\SearchManager;
+use App\Model\CitationManager;
+
 
 
 class SearchController extends AbstractController
@@ -19,8 +21,11 @@ class SearchController extends AbstractController
 
         $bornes = $chercheur->bornes($x, $y);
 
+        $citationManager = new CitationManager();
+        $citation = $citationManager->selectRandCitation();
 
-        return $this->twig->render('Home/index.html.twig', ['x' => $x, 'y' =>$y, 'bornes' => $bornes, 'ville' => $ville]);
+
+        return $this->twig->render('Home/index.html.twig', ['x' => $x, 'y' =>$y, 'bornes' => $bornes, 'ville' => $ville, 'citation' => $citation]);
 
     }
 }
