@@ -43,3 +43,7 @@
 .accordion-button{
     color: var(--bs-secondary);
 }
+
+.map-text{
+    color: var(--bs-secondary);
+}
