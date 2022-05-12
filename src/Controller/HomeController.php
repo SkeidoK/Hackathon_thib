@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Model\CitationManager;
+
 class HomeController extends AbstractController
 {
     /**
@@ -9,6 +11,10 @@ class HomeController extends AbstractController
      */
     public function index(): string
     {
-        return $this->twig->render('Home/index.html.twig');
+        $citationManager = new CitationManager();
+        $citation = $citationManager->selectRandCitation();
+
+
+        return $this->twig->render('Home/index.html.twig', ['citation' => $citation]);
     }
 }
