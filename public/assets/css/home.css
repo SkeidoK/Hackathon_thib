@@ -20,3 +20,13 @@
     -webkit-text-stroke-color: var(--bs-secondary);
     text-shadow: 1px 1px 1px var(--shadow-color);
 }
+
+.citation {
+    color: var(--bs-secondary);
+    font-size: 2rem;
+}
+
+.moral {
+    color: var(--bs-secondary);
+    font-size: 3rem;
+}
