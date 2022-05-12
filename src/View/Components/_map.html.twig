@@ -1,8 +1,10 @@
 {% block map %}
+<h1 class="text-center text-secondary pt-5 display-1">Le problème des bornes de recharge</h1>
+
 	<div class="container d-flex">
-		<div class="ms-4 d-flex flex-column justify-content-start align-items-start mx-auto ">
+		<div class="ms-4 d-flex flex-column justify-content-center align-items-center mx-auto ">
 			<form action="http://localhost:8000/search" method="GET" class="m-4">
-				<label for="ville">Rechercher une ville</label><br>
+				<label class="text-secondary" for="ville">Rechercher une ville</label><br>
 				<input type="search" id="ville" name="ville" class="form-control rounded" placeholder="Ville" aria-label="Search" aria-describedby="search-addon"/><br>
 			</form>
 			<div class="d-flex d-flex flex-column justify-content-center align-items-center mx-auto ">
