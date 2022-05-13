@@ -2,6 +2,11 @@
 {% block stylesheet %}
 	<link rel="stylesheet" href="/assets/css/home.css">
 {% endblock %}
+
+{% block header %}
+{% include 'Components/_navbar.html.twig' %}
+{% endblock %}
+
 {% block content %}
 	<h1>Evil tesla !</h1>
 {% endblock %}

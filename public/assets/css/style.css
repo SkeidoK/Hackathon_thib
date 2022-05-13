@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@200;400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;800&display=swap');
+
 :root {
     --bs-primary-rgb: 2, 5, 4;
     --bs-primary: #020504;
@@ -27,3 +28,59 @@
 
     --line-height: 1.5;
 }
+
+body{
+height: 100vh;
+background: var(--bs-secondary);
+
+}
+
+.sidebar .text{
+    font-size: 16px;
+    font-weight: 500;
+    color: var()
+}
+
+.sidebar .image{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* === Sidebar === 
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+
+}
+
+.sidebar header .image-text{
+    display: flex;
+    align-items: center;
+}
+
+header .image-text .header-text{
+    display: flex;
+    align-items: column;
+}
+
+.header-text .home{
+    font-weight: 600;
+}
+
+.header-text .solution{
+    margin-top: -2px;
+}
+
+.sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+
+}
+*/
