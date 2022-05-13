@@ -2,8 +2,7 @@
 {% block stylesheet %}
 	<link rel="stylesheet" href="/assets/css/home.css">
 {% endblock %}
-{% block content %}
-{% endblock %}
+{% block content %}{% endblock %}
 
 {% block map %}
 	{% include 'Components/_map.html.twig' %}
@@ -32,13 +31,14 @@
 	{% include 'CreationVehicule/_creation.html.twig' %}
 {% endblock %}
 
-{% block moral %}
-	{% include 'Moral/_moral.html.twig' %}
+{% block citation1 %}
+	{% include 'Citation/_citation1.html.twig' %}
 {% endblock %}
 
 {% block tips %}
 	{% include "Tips/index.html.twig" %}
 {% endblock %}
-			{% block footer %}
-				{% include "/Includes/_footer.html.twig" %}
-			{% endblock %}
+
+{% block footer %}
+	{% include "/Includes/_footer.html.twig" %}
+{% endblock %}
