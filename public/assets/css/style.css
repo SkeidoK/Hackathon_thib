@@ -3,10 +3,10 @@
 :root {
     --bs-primary-rgb: 2, 5, 4;
     --bs-primary: #020504;
-    --bs-secondary-rgb: 21, 198, 92;
-    --bs-secondary: #15c65c;
-    --bs-light-rgb: 126, 246, 198;
-    --bs-light: #7EF6C6;
+    --bs-secondary-rgb: 255, 255, 255;
+    --bs-secondary: #ffffff;
+    --bs-light-rgb: 255, 255, 255;
+    --bs-light: #ffffff;
     --bs-primary-rgba: 11, 29, 22, 1;
     --shadow-color: rgba(77, 60, 60, 0.2);
     --title-font: 'Bebas Neue', cursive;

@@ -1,9 +1,9 @@
 {% block map %}
 <h1 class="text-center text-secondary pt-5 display-1">Le problème des bornes de recharge</h1>
 
-	<div class="container d-flex">
+	<div class="container d-flex" id="carte">
 		<div class="ms-4 d-flex flex-column justify-content-center align-items-center mx-auto ">
-			<form action="http://localhost:8000/search" method="GET" class="m-4">
+			<form action="http://localhost:8000/search#carte" method="GET" class="m-4">
 				<label class="text-secondary" for="ville">Rechercher une ville</label><br>
 				<input type="search" id="ville" name="ville" class="form-control rounded" placeholder="Ville" aria-label="Search" aria-describedby="search-addon"/><br>
 			</form>
@@ -20,9 +20,11 @@
 						<b class="text-danger">{{ bornes.0 }}</b>
 						kgCO2e en tout pour déployer ces bornes.
 					</h3>
+					{% else %}
+						<h3 class="text-secondary">Une borne de recharge comporte environ <b class="text-danger">100kg</b> de cuivre, ce qui équivaut a <b class="text-danger">620</b> kgCO2e.</h3>
 				{% endif %}
 			</div>
 		</div>
 			<iframe class="me-4 mt-4 mb-4" src="https://map.openchargemap.io/?mode=embedded&latitude={{ y|default(" 47") }}&longitude={{ x|default(" 1.9") }}" allow="geolocation" frameborder="0" width="100%" height="500px"></iframe>
-	</div>
+	</div><br><br>
 {% endblock %}
