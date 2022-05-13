@@ -20,12 +20,12 @@ class SearchController extends AbstractController
         $y = (string)$recherche['features']['0']['geometry']['coordinates']['1'];
 
         $bornes = $chercheur->bornes($x, $y);
-
+        $iphones = (int)($bornes['0'] / 57);
         $citationManager = new CitationManager();
         $citation = $citationManager->selectRandCitation();
 
 
-        return $this->twig->render('Home/index.html.twig', ['x' => $x, 'y' =>$y, 'bornes' => $bornes, 'ville' => $ville, 'citation' => $citation]);
+        return $this->twig->render('Home/index.html.twig', ['x' => $x, 'y' =>$y, 'bornes' => $bornes, 'ville' => $ville, 'citation' => $citation, 'iphones' => $iphones]);
 
     }
 }

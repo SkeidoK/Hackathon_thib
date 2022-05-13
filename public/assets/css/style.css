@@ -4,10 +4,10 @@
 :root {
     --bs-primary-rgb: 2, 5, 4;
     --bs-primary: #020504;
-    --bs-secondary-rgb: 21, 198, 92;
-    --bs-secondary: #15c65c;
-    --bs-light-rgb: 126, 246, 198;
-    --bs-light: #7EF6C6;
+    --bs-secondary-rgb: 255, 255, 255;
+    --bs-secondary: #ffffff;
+    --bs-light-rgb: 255, 255, 255;
+    --bs-light: #ffffff;
     --bs-primary-rgba: 11, 29, 22, 1;
     --shadow-color: rgba(77, 60, 60, 0.2);
     --title-font: 'Bebas Neue', cursive;
@@ -47,40 +47,24 @@ background: var(--bs-secondary);
     align-items: center;
 }
 
-/* === Sidebar === 
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 250px;
-
-}
-
-.sidebar header .image-text{
-    display: flex;
-    align-items: center;
-}
-
-header .image-text .header-text{
-    display: flex;
-    align-items: column;
-}
-
-.header-text .home{
-    font-weight: 600;
-}
-
-.header-text .solution{
-    margin-top: -2px;
-}
-
-.sidebar header .toggle{
+#myVideo {
+    z-index: -5;
     position: absolute;
-    top: 50%;
-    left: -25px;
-    transform: translateY(-50%);
-
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.8;
+    filter: contrast(100%);
+    filter: opacity(100%);
+    filter: brightness(40%);
+    filter: blur(0px);
+    filter: grayscale(80%);
+  }
+  body {
+      font-family: var(--text-font);
+  }
+  p {
+    font-family: var(--text-font2);
 }
-*/
+

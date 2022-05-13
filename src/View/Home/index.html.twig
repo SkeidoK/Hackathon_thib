@@ -3,13 +3,12 @@
 	<link rel="stylesheet" href="/assets/css/home.css">
 {% endblock %}
 
+
 {% block header %}
 {% include 'Components/_navbar.html.twig' %}
 {% endblock %}
 
-{% block content %}
-	<h1>Evil tesla !</h1>
-{% endblock %}
+{% block content %}{% endblock %}
 
 {% block map %}
 	{% include 'Components/_map.html.twig' %}
@@ -20,7 +19,7 @@
 		<header>
 			<div class="car d-flex align-items-center flex-column justify-content-center">
 				<div class="title-back">
-					<h1 class="title title-car mx-5 text-center text-secondary">Les voitures électriques</h1>
+					<h1 class="title title-car mx-5 text-center">Les voitures électriques</h1>
 				</div>
 				<div>
 					<h2 class="subtitle-car">Que savez-vous vraiment?</h2>
@@ -38,10 +37,14 @@
 	{% include 'CreationVehicule/_creation.html.twig' %}
 {% endblock %}
 
-{% block moral %}
-	{% include 'Moral/_moral.html.twig' %}
+{% block citation1 %}
+	{% include 'Citation/_citation1.html.twig' %}
 {% endblock %}
 
 {% block tips %}
 	{% include "Tips/index.html.twig" %}
+{% endblock %}
+
+{% block footer %}
+	{% include "/Includes/_footer.html.twig" %}
 {% endblock %}
