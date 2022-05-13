@@ -28,6 +28,12 @@
     text-shadow: 1px 1px 1px var(--bs-secondary);
 }
 
+.author {
+    font-family: var(--text-font2);
+    color: var(--bs-secondary);
+    font-size: 2rem;
+}
+
 .moral {
     font-family: var(--text-font2);
     color: var(--bs-secondary);

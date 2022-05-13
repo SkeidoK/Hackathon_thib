@@ -1,3 +1,6 @@
 {% block citation %}
-    <p class="citation d-flex justify-content-center m-5">{{ citation.citation }},<br> {{ citation.author }}</p>
+	<div>
+		<p class="citation container d-flex justify-content-center mt-5">{{ citation.citation }},<br></p>
+		<p class="author container text-danger mb-5">{{ citation.author }}</p>
+	</div>
 {% endblock %}
