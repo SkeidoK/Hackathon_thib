@@ -35,14 +35,6 @@
     text-shadow: 1px 1px 1px var(--bs-secondary);
 }
 
-.accordion{
-    color: var(--bs-secondary);
-    background-color: black;
-}
-
-.accordion-button{
-    color: var(--bs-secondary);
-}
 
 .map-text{
     color: var(--bs-secondary);
