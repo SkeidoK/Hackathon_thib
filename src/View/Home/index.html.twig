@@ -8,13 +8,7 @@
 {% include 'Components/_navbar.html.twig' %}
 {% endblock %}
 
-{% block content %}{% endblock %}
-
-{% block map %}
-	{% include 'Components/_map.html.twig' %}
-{% endblock %}
-{% block random %}
-
+{% block content %}
 	<div class="container-fluid">
 		<header>
 			<div class="car d-flex align-items-center flex-column justify-content-center">
@@ -27,6 +21,14 @@
 			</div>
 		</header>
 	</div>
+{% endblock %}
+
+{% block quiz %}
+	{% include 'Quiz/_quiz.html.twig' %}
+{% endblock %}
+
+{% block map %}
+	{% include 'Components/_map.html.twig' %}
 {% endblock %}
 
 {% block citation %}
