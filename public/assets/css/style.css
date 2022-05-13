@@ -42,3 +42,9 @@
     filter: blur(0px);
     filter: grayscale(80%);
   }
+  body {
+      font-family: var(--text-font);
+  }
+  p {
+    font-family: var(--text-font2);
+}
