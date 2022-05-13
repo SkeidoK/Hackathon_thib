@@ -21,6 +21,33 @@
     text-shadow: 1px 1px 1px var(--shadow-color);
 }
 
+div .quiz-title {
+    height: 4.2rem;
+}
+
+div .separate-quiz {
+    height: 1rem;
+}
+
+.quiz-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: var(--title-font-size);
+}
+
+.hide {
+    display: none;
+}
+
+.result {
+    font-family: var(--text-font);
+    font-size: calc(var(--font-size) + 0.5rem);
+}
+
+.question-container {
+    font-family: var(--text-font);
+    font-size: calc(var(--font-size) + 0.5rem);
+}
+
 .citation {
     font-family: var(--text-font2);
     color: var(--bs-secondary);
@@ -40,7 +67,6 @@
     font-size: 3rem;
     text-shadow: 1px 1px 1px var(--bs-secondary);
 }
-
 
 .map-text{
     color: var(--bs-secondary);
