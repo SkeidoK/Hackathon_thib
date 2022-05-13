@@ -7,7 +7,7 @@ const Questions = [{
         { text: "Environ 15", isCorrect: true }
     ], 
     textCorrect : "C'est vrai ! Sachez que 15 tonnes de cO2 équivaut à environ 8 670 520 km de TGV. Pensez-y lors de votre prochain long trajet.",
-    textBadAnswer: "C'est faux ! Il s'agit de 15 tonnes. Sachez, par ailleurs que 15 tonnes de cO2 équivaut à environ 8 670 520 km de TGV. Pensez-y lors de votre prochain long trajet.",
+    textBadAnswer: "C'est faux ! Il s'agit de 15 tonnes. Sachez, par ailleurs, que 15 tonnes de cO2 équivaut à environ 8 670 520 km de TGV. Pensez-y lors de votre prochain long trajet.",
 },
 {
     id: 1,
@@ -17,8 +17,8 @@ const Questions = [{
         { text: "6 tonne", isCorrect: false },
         { text: "1 tonne", isCorrect: true },
     ],
-    textCorrect: "sad",
-    textBadAnswer: "very sad"
+    textCorrect: "C'est tout à fait vrai ! Une tonne de cO2 est l'équivalent de 54 jours de chauffage au gaz. Aie?",
+    textBadAnswer: "C'est faux, il s'agit d'une tonne. Une tonne de cO2 est l'équivalent de 54 jours de chauffage au gaz. Aie?"
 },
 {
     id: 2,
@@ -28,8 +28,8 @@ const Questions = [{
         { text: "Environ 17.5 tonnes", isCorrect: true },
         { text: "Environ 11 tonnes", isCorrect: false },
     ],
-    textCorrect: "woo",
-    textBadAnswer: "very sad"
+    textCorrect: "C'est vrai ! Plutôt énorme en vue des questions précédentes, n'est-ce pas? C'est l'équivalent d'environ 94 086 km en avion. Wow.",
+    textBadAnswer: "Eh non, il s'agit de 17.5 tonnes en moyenne. Plutôt énorme en vue des questions précédentes, n'est-ce pas? Et c'est l'équivalent d'environ 132 575 758 litres d'eau du robinet !"
 }
 ]
 
@@ -83,7 +83,7 @@ var selected = "";
 
 // Show selection for op1
 op1.addEventListener("click", () => {
-    op1.style.backgroundColor = "var(--bs-secondary)";
+    op1.style.backgroundColor = "var(--grey)";
     op2.style.backgroundColor = "var(--bs-light)";
     op3.style.backgroundColor = "var(--bs-light)";
     op4.style.backgroundColor = "var(--bs-light)";
@@ -93,7 +93,7 @@ op1.addEventListener("click", () => {
 // Show selection for op2
 op2.addEventListener("click", () => {
     op1.style.backgroundColor = "var(--bs-light)";
-    op2.style.backgroundColor = "var(--bs-secondary)";
+    op2.style.backgroundColor = "var(--grey)";
     op3.style.backgroundColor = "var(--bs-light)";
     op4.style.backgroundColor = "var(--bs-light)";
     selected = op2.value;
@@ -103,7 +103,7 @@ op2.addEventListener("click", () => {
 op3.addEventListener("click", () => {
     op1.style.backgroundColor = "var(--bs-light)";
     op2.style.backgroundColor = "var(--bs-light)";
-    op3.style.backgroundColor = "var(--bs-secondary)";
+    op3.style.backgroundColor = "var(--grey)";
     op4.style.backgroundColor = "var(--bs-light)";
     selected = op3.value;
 })
@@ -113,7 +113,7 @@ op4.addEventListener("click", () => {
     op1.style.backgroundColor = "var(--bs-light)";
     op2.style.backgroundColor = "var(--bs-light)";
     op3.style.backgroundColor = "var(--bs-light)";
-    op4.style.backgroundColor = "var(--bs-secondary)";
+    op4.style.backgroundColor = "var(--grey)";
     selected = op4.value;
 })
 
@@ -123,7 +123,7 @@ submit.addEventListener("click", () => {
         result[0].innerHTML = Questions[id].textCorrect;
         result[0].style.color = "green";
     } else {
-        result[0].innerHTML = "False";
+        result[0].innerHTML = Questions[id].textBadAnswer;
         result[0].style.color = "red";
     }
 })
