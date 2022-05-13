@@ -36,8 +36,9 @@
     min-width: 100%;
     min-height: 100%;
     opacity: 0.8;
-    filter: contrast(120%);
-    filter: opacity(120%);
+    filter: contrast(100%);
+    filter: opacity(100%);
     filter: brightness(40%);
     filter: blur(0px);
+    filter: grayscale(80%);
   }
