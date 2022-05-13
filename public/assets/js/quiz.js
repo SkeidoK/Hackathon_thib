@@ -1,13 +1,13 @@
 const Questions = [{
     id: 0,
-    q: "Combien de tonnes de cO2 émet une voiture intermédiaire diésel (ex: Ford Fusion) sur 100 000km?",
+    q: "Combien de tonnes de CO2 émet une voiture intermédiaire diésel (ex: Ford Fusion) sur 100 000km?",
     a: [{ text: "Environ 13", isCorrect: false },
         { text: "Environ 12", isCorrect: false },
         { text: "Environ 21", isCorrect: false },
         { text: "Environ 15", isCorrect: true }
     ], 
-    textCorrect : "C'est vrai ! Sachez que 15 tonnes de cO2 équivaut à environ 8 670 520 km de TGV. Pensez-y lors de votre prochain long trajet.",
-    textBadAnswer: "C'est faux ! Il s'agit de 15 tonnes. Sachez, par ailleurs, que 15 tonnes de cO2 équivaut à environ 8 670 520 km de TGV. Pensez-y lors de votre prochain long trajet.",
+    textCorrect : "C'est vrai ! Sachez que 15 tonnes de CO2 équivaut à environ 8 670 520 km de TGV. Pensez-y lors de votre prochain long trajet.",
+    textBadAnswer: "C'est faux ! Il s'agit de 15 tonnes. Sachez, par ailleurs, que 15 tonnes de CO2 équivaut à environ 8 670 520 km de TGV. Pensez-y lors de votre prochain long trajet.",
 },
 {
     id: 1,
@@ -17,12 +17,12 @@ const Questions = [{
         { text: "6 tonne", isCorrect: false },
         { text: "1 tonne", isCorrect: true },
     ],
-    textCorrect: "C'est tout à fait vrai ! Une tonne de cO2 est l'équivalent de 54 jours de chauffage au gaz. Aie?",
-    textBadAnswer: "C'est faux, il s'agit d'une tonne. Une tonne de cO2 est l'équivalent de 54 jours de chauffage au gaz. Aie?"
+    textCorrect: "C'est tout à fait vrai ! Une tonne de CO2 est l'équivalent de 54 jours de chauffage au gaz. Aie?",
+    textBadAnswer: "C'est faux, il s'agit d'une tonne. Une tonne de CO2 est l'équivalent de 54 jours de chauffage au gaz. Aïe?"
 },
 {
     id: 2,
-    q: "Combien de tonnes de cO2 émet la construction d'une batterie de voiture électrique?",
+    q: "Combien de tonnes de CO2 émet la construction d'une batterie de voiture électrique?",
     a: [{ text: "Environ 2.5 tonnes", isCorrect: false },
         { text: "Environ 9.5 tonnes", isCorrect: false },
         { text: "Environ 17.5 tonnes", isCorrect: true },
